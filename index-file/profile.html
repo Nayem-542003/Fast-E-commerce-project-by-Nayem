@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce/Profile</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header id="header">
+        <div class="menu__icon">
+          <i class="fa-solid fa-bars fa-3x" id="bars"></i>
+        </div>
+        <nav id="nav__menu">
+          <div class="primary__nav hidden" id="primary__nav">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="register.html">Register</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="logout.html">Logout</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li>
+                <a href="#">
+                  <img src="../img/nayem2.jpg" alt="profile__picture" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="secondary__nav">
+            <div class="nav__title">
+              <a href="#"><h1 class="heading-title">Nayem Express</h1></a>
+            </div>
+            <div class="nav__order-summary">
+              <a href="select-product.html">
+                <i class="fa-solid fa-cart-shopping"></i> Cart 4 products - $144.40
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Main -->
+      <main>
+        <article class="my-profile">
+          <div class="profile">
+            <div class="img">
+              <img src="../img/desiner.jpg" alt="Web Designer" />
+            </div>
+            <div class="content">
+              <h2 class="profile__name">Nayem Hossen</h2>
+              <p class="profile__email">nayemhossen3035@gmail.com</p>
+              <p class="profile__description">I love to buy gadgets</p>
+            </div>
+            <div class="btn">
+              <button title="Edit Profile"><i class="far fa-edit fa-2x"></i></button>
+              <button title="Delete Profile"><i class="far fa-trash-alt fa-2x"></i></button>
+            </div>
+          </div>
+        </article>
+      </main>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <div class="footer__subscribe">
+          <h3>Subscribe to Newsletter</h3>
+          <input type="email" id="footer-email" placeholder="Your Email" />
+          <button type="button">Subscribe</button>
+        </div>
+        <div class="footer__copyright">
+          <p>© Copyright 2025 Nayem Express. All rights reserved</p>
+        </div>
+      </footer>
+    </div>
+    <script src="../script/script.js"></script>
+  </body>
+</html>

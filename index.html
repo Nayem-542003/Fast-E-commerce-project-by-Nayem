@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="this is an ecommerce project for making anis express"
+    />
+    <title>E-commerce project by nayem</title>
+
+    <!-- style.css  -->
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- responsive.css  -->
+    <link rel="stylesheet" href="styles/responsive.css" />
+
+    <!-- font-awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header start -->
+      <header id="header">
+        <div class="menu__icon">
+          <i class="fa-solid fa-bars fa-3x" id="bars"></i>
+        </div>
+        <nav id="nav__menu">
+          <div class="primary__nav hidden" id="primary__nav">
+            <ul>
+              <li class="active"><a href="index.html">Home</a></li>
+              <li>
+                <a href="./index-file/register.html" target="_parent"
+                  >Register</a
+                >
+              </li>
+              <li>
+                <a href="./index-file/login.html" target="_parent">Login</a>
+              </li>
+              <li>
+                <a href="./index-file/logout.html" target="_parent">Logout</a>
+              </li>
+              <li>
+                <a href="./index-file/contact.html" target="_parent">Contact</a>
+              </li>
+              <li>
+                <a href="./index-file/profile.html" target="_parent"
+                  ><img src="img/nayem2.jpg" alt="profile__picture"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="secondary__nav">
+            <div class="nav__title">
+              <a href="./index-file/profile.html"
+                ><h1 class="heading-title">Nayem Express</h1></a
+              >
+            </div>
+            <div class="nav__order-summary">
+              <a href="./index-file/select-product.html" target="_parent"
+                ><i class="fa-solid fa-cart-shopping"></i> Cart 4 products -
+                $144.40
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- header Ends -->
+
+      <!-- banner section start  -->
+      <section class="banner">
+        <div class="banner__marquee">
+          <span> <h2>50% sales is going on</h2></span>
+        </div>
+        <div class="banner__card">
+          <article class="card">
+            <i class="fa-solid fa-truck fa-4x"></i>
+            <h3>Shipping within 7 days</h3>
+          </article>
+          <article class="card">
+            <i class="fa-brands fa-rocketchat fa-4x"></i>
+
+            <h3>Support 24/7</h3>
+          </article>
+          <article class="card">
+            <i class="fa-regular fa-credit-card fa-4x"></i>
+            <h3>Safe Payments</h3>
+          </article>
+        </div>
+      </section>
+      <!-- banner section Ends  -->
+      <!-- start aside section -->
+
+      <div class="display-grid">
+        <aside class="product-capacity">
+          <div class="product__categories">
+            <div class="categories__title"><h3>Categories</h3></div>
+            <div class="categories__input">
+              <label><input type="checkbox" value="all" id="all" />All</label
+              ><br />
+              <label
+                ><input type="checkbox" value="phone" id="phone" />Phone</label
+              ><br />
+              <label
+                ><input
+                  type="checkbox"
+                  value="tablets"
+                  id="tablets"
+                />Tablets</label
+              ><br />
+              <label
+                ><input
+                  type="checkbox"
+                  value="televisions"
+                  id="televisions"
+                />Televisions</label
+              ><br />
+              <label
+                ><input
+                  type="checkbox"
+                  value="computer"
+                  id="computer"
+                />Computer</label
+              ><br />
+              <label
+                ><input
+                  type="checkbox"
+                  value="headphones"
+                  id="headphones"
+                />Headphones</label
+              ><br />
+            </div>
+          </div>
+          <div class="product__price-range">
+            <div class="price-range__title">
+              <h3>Price Range</h3>
+            </div>
+            <div class="price-range__input">
+              <label
+                ><input type="radio" value="$0-$20" id="price-0-20" /> $0 -
+                $20</label
+              ><br />
+              <label
+                ><input type="radio" value="$21-$50" id="price-21-50" />$21 -
+                $50</label
+              ><br />
+              <label
+                ><input type="radio" value="$51-$100" id="price-51-100" />$51 -
+                $100</label
+              ><br />
+              <label
+                ><input type="radio" value="$101-$500" id="price-101-500" />$101
+                - $500</label
+              ><br />
+              <label
+                ><input type="radio" value="$500 +" id="price-501" />$ 500
+                +</label
+              ><br />
+            </div>
+          </div>
+          <div class="product__shipping-options">
+            <div class="shipping-option__title"><h3>Shipping Options</h3></div>
+            <div class="shipping-option__input">
+              <label><input type="radio" value="free" id="free" />Free</label
+              ><br />
+              <label><input type="radio" value="Paid" id="paid" />Paid</label
+              ><br />
+            </div>
+          </div>
+        </aside>
+
+        <!-- Ends aside section  -->
+        <!-- main start  -->
+        <main>
+          <!-- search section start  -->
+          <section id="search-section">
+            <div class="search__sort">
+              <label for="sort-select">Sort by:</label>
+              <select name="sort" id="sort-select">
+                <option value="all">All products</option>
+                <option value="price-asc">Price: Low → High</option>
+                <option value="price-desc">Price: High → Low</option>
+                <option value="newest">Newest Arrivals</option>
+                <option value="best-seller">Best Seller</option>
+                <option value="rating-desc">Rating: High → Low</option>
+                <option value="brand-asc">Brand: A → Z</option>
+                <option value="brand-desc">Brand: Z → A</option>
+                <option value="stock">In Stock</option>
+                <option value="delivery">Fastest Delivery</option>
+                <option value="discount">Discount</option>
+              </select>
+            </div>
+
+            <div class="search__box">
+              <input
+                type="text"
+                placeholder="Search product..."
+                id="search-input"
+              />
+              <button class="search__btn">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </section>
+
+          <!-- search section Ends   -->
+          <!--product item  section start  -->
+
+          <section id="products">
+            <div class="product-card">
+              <div class="product-card__badge">
+                <p>5 in stock</p>
+                <hr class="product-card__divider" />
+                <p>3 sold</p>
+              </div>
+
+              <img
+                src="img/product1.jpg"
+                alt="Sony V-4 Headphone"
+                class="product-card__image"
+              />
+
+              <div class="product-card__body">
+                <div class="product-card__title">
+                  <h2>Sony V-4 Headphone</h2>
+                  <span class="color--green"></span>
+                  <span class="color--black"></span>
+                  <span class="color--red"></span>
+                </div>
+
+                <div class="product-card__description">
+                  <p>
+                    Lorem ipsum dolor sit amet eaque fugiat consequuntur ipsa
+                    fuga qui facilis eos. consectetur adipisicing elit.<span
+                      class="learn-more hidden"
+                      id="learn-more"
+                    >
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Ducimus quidem saepe error,
+                    </span>
+                    <button class="des__btn" id="des__btn">Learn more</button>
+                  </p>
+                </div>
+
+                <div class="product-card__details">
+                  <p class="price">$225.99</p>
+                  <p class="rating">Rating: 4.5/5</p>
+                  <button class="btn btn--add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <!-- Apple smart watch -->
+
+            <div class="product-card">
+              <div class="product-card__badge">
+                <p>2 in stock</p>
+                <hr class="product-card__divider" />
+                <p>9 sold</p>
+              </div>
+
+              <img
+                src="img/product2.png"
+                alt="Apple smart watch"
+                class="product-card__image"
+              />
+
+              <div class="product-card__body">
+                <div class="product-card__title">
+                  <h2>Apple smart watch</h2>
+                  <span class="color--green"></span>
+                  <span class="color--black"></span>
+                  <span class="color--red"></span>
+                </div>
+
+                <div class="product-card__description">
+                  <p>
+                    Lorem ipsum dolor sit amet eaque fugiat consequuntur ipsa
+                    fuga qui facilis eos. consectetur adipisicing elit.<span
+                      class="learn-more hidden"
+                      id="learn-more"
+                    >
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Ducimus quidem saepe error,
+                    </span>
+                    <button class="des__btn" id="des__btn">Learn more</button>
+                  </p>
+                </div>
+
+                <div class="product-card__details">
+                  <p class="price">$425.99</p>
+                  <p class="rating">Rating: 4.2/5</p>
+                  <button class="btn btn--add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <!-- Apple smart glass -->
+
+            <div class="product-card">
+              <div class="product-card__badge">
+                <p>3 in stock</p>
+                <hr class="product-card__divider" />
+                <p>12 sold</p>
+              </div>
+
+              <img
+                src="img/product3.jpg"
+                alt="Apple smart glass"
+                class="product-card__image"
+              />
+
+              <div class="product-card__body">
+                <div class="product-card__title">
+                  <h2>Apple smart glass</h2>
+                  <span class="color--green"></span>
+                  <span class="color--black"></span>
+                  <span class="color--red"></span>
+                </div>
+
+                <div class="product-card__description">
+                  <p>
+                    Lorem ipsum dolor sit amet eaque fugiat consequuntur ipsa
+                    fuga qui facilis eos. consectetur adipisicing elit.<span
+                      class="learn-more hidden"
+                      id="learn-more"
+                    >
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Ducimus quidem saepe error,
+                    </span>
+                    <button class="des__btn" id="des__btn">Learn more</button>
+                  </p>
+                </div>
+
+                <div class="product-card__details">
+                  <p class="price">$325.99</p>
+                  <p class="rating">Rating: 3.8/5</p>
+                  <button class="btn btn--add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-card__badge">
+                <p>5 in stock</p>
+                <hr class="product-card__divider" />
+                <p>3 sold</p>
+              </div>
+
+              <img
+                src="img/product1.jpg"
+                alt="Sony V-4 Headphone"
+                class="product-card__image"
+              />
+
+              <div class="product-card__body">
+                <div class="product-card__title">
+                  <h2>Sony V-4 Headphone</h2>
+                  <span class="color--green"></span>
+                  <span class="color--black"></span>
+                  <span class="color--red"></span>
+                </div>
+
+                <div class="product-card__description">
+                  <p>
+                    Lorem ipsum dolor sit amet eaque fugiat consequuntur ipsa
+                    fuga qui facilis eos. consectetur adipisicing elit.<span
+                      class="learn-more hidden"
+                      id="learn-more"
+                    >
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Ducimus quidem saepe error,
+                    </span>
+                    <button class="des__btn" id="des__btn">Learn more</button>
+                  </p>
+                </div>
+
+                <div class="product-card__details">
+                  <p class="price">$225.99</p>
+                  <p class="rating">Rating: 4.5/5</p>
+                  <button class="btn btn--add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <!-- Apple smart watch -->
+
+            <div class="product-card">
+              <div class="product-card__badge">
+                <p>2 in stock</p>
+                <hr class="product-card__divider" />
+                <p>9 sold</p>
+              </div>
+
+              <img
+                src="img/product2.png"
+                alt="Apple smart watch"
+                class="product-card__image"
+              />
+
+              <div class="product-card__body">
+                <div class="product-card__title">
+                  <h2>Apple smart watch</h2>
+                  <span class="color--green"></span>
+                  <span class="color--black"></span>
+                  <span class="color--red"></span>
+                </div>
+
+                <div class="product-card__description">
+                  <p>
+                    Lorem ipsum dolor sit amet eaque fugiat consequuntur ipsa
+                    fuga qui facilis eos. consectetur adipisicing elit.<span
+                      class="learn-more hidden"
+                      id="learn-more"
+                    >
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Ducimus quidem saepe error,
+                    </span>
+                    <button class="des__btn" id="des__btn">Learn more</button>
+                  </p>
+                </div>
+
+                <div class="product-card__details">
+                  <p class="price">$425.99</p>
+                  <p class="rating">Rating: 4.2/5</p>
+                  <button class="btn btn--add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <!-- Apple smart glass -->
+
+            <div class="product-card">
+              <div class="product-card__badge">
+                <p>3 in stock</p>
+                <hr class="product-card__divider" />
+                <p>12 sold</p>
+              </div>
+
+              <img
+                src="img/product3.jpg"
+                alt="Apple smart glass"
+                class="product-card__image"
+              />
+
+              <div class="product-card__body">
+                <div class="product-card__title">
+                  <h2>Apple smart glass</h2>
+                  <span class="color--green"></span>
+                  <span class="color--black"></span>
+                  <span class="color--red"></span>
+                </div>
+
+                <div class="product-card__description">
+                  <p>
+                    Lorem ipsum dolor sit amet eaque fugiat consequuntur ipsa
+                    fuga qui facilis eos. consectetur adipisicing elit.<span
+                      class="learn-more hidden"
+                      id="learn-more"
+                    >
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Ducimus quidem saepe error,
+                    </span>
+                    <button class="des__btn" id="des__btn">Learn more</button>
+                  </p>
+                </div>
+
+                <div class="product-card__details">
+                  <p class="price">$325.99</p>
+                  <p class="rating">Rating: 3.8/5</p>
+                  <button class="btn btn--add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- product item section Ends  -->
+          <!-- section pagination start  -->
+
+          <section id="pagination">
+            <a href="#" id="pagination__icon-left"
+              ><i class="fa-solid fa-angle-left"></i
+            ></a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">...</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">10</a>
+            <a href="#">...</a>
+            <a href="#">50</a>
+            <a href="#" id="pagination__icon-right"
+              ><i class="fa-solid fa-angle-right"></i
+            ></a>
+          </section>
+          <!-- section pagination End  -->
+        </main>
+      </div>
+      <!-- main Ends  -->
+      <!-- footer start  -->
+      <footer id="footer">
+        <div class="footer__subscribe">
+          <h3>subscribe to Newsletter</h3>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your Email"
+          />
+          <button type="button">subscribe</button>
+        </div>
+        <div class="footer__copyright">
+          <p>© Copyright 2025 Nayem Express. All rights reserved</p>
+        </div>
+      </footer>
+      <!-- footer Ends  -->
+    </div>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>

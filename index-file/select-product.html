@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce/Select Product</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header id="header">
+        <div class="menu__icon">
+          <i class="fa-solid fa-bars fa-3x" id="bars"></i>
+        </div>
+        <nav id="nav__menu">
+          <div class="primary__nav hidden" id="primary__nav">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="register.html">Register</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="logout.html">Logout</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li>
+                <a href="profile.html">
+                  <img src="../img/nayem2.jpg" alt="profile__picture" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="secondary__nav">
+            <div class="nav__title">
+              <a href="profile.html"><h1 class="heading-title">Nayem Express</h1></a>
+            </div>
+            <div class="nav__order-summary">
+              <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i> Cart 4 products - $144.40
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Main -->
+      <main id="select-product">
+        <!-- Product Section -->
+        <section id="products">
+          <!-- Product Card Example -->
+          <div class="product-card">
+            <div class="product-card__badge">
+              <p>5 in stock</p>
+              <hr class="product-card__divider" />
+              <p>3 sold</p>
+            </div>
+            <img
+              src="../img/product1.jpg"
+              alt="Sony V-4 Headphone"
+              class="product-card__image"
+            />
+            <div class="product-card__body">
+              <div class="product-card__title">
+                <h2>Sony V-4 Headphone</h2>
+                <span class="color--green"></span>
+                <span class="color--black"></span>
+                <span class="color--red"></span>
+              </div>
+              <div class="product-card__description">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  <span class="learn-more hidden" id="learn-more">
+                    Additional product details shown here when clicking learn more.
+                  </span>
+                  <button class="des__btn"  id="des__btn">Learn more</button>
+                </p>
+              </div>
+              <div class="product-card__details">
+                <p class="price">$225.99</p>
+                <p class="rating">Rating: 4.5/5</p>
+                <button class="btn btn--add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Apple Smart Watch -->
+          <div class="product-card">
+            <div class="product-card__badge">
+              <p>2 in stock</p>
+              <hr class="product-card__divider" />
+              <p>9 sold</p>
+            </div>
+            <img
+              src="../img/product2.png"
+              alt="Apple Smart Watch"
+              class="product-card__image"
+            />
+            <div class="product-card__body">
+              <div class="product-card__title">
+                <h2>Apple Smart Watch</h2>
+                <span class="color--green"></span>
+                <span class="color--black"></span>
+                <span class="color--red"></span>
+              </div>
+              <div class="product-card__description">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  <span class="learn-more hidden" id="learn-more">
+                    Extra details for Apple Smart Watch.
+                  </span>
+                  <button class="des__btn" id="des__btn">Learn more</button>
+                </p>
+              </div>
+              <div class="product-card__details">
+                <p class="price">$425.99</p>
+                <p class="rating">Rating: 4.2/5</p>
+                <button class="btn btn--add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Apple Smart Glass -->
+          <div class="product-card">
+            <div class="product-card__badge">
+              <p>3 in stock</p>
+              <hr class="product-card__divider" />
+              <p>12 sold</p>
+            </div>
+            <img
+              src="../img/product3.jpg"
+              alt="Apple Smart Glass"
+              class="product-card__image"
+            />
+            <div class="product-card__body">
+              <div class="product-card__title">
+                <h2>Apple Smart Glass</h2>
+                <span class="color--green"></span>
+                <span class="color--black"></span>
+                <span class="color--red"></span>
+              </div>
+              <div class="product-card__description">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  <span class="learn-more hidden" id="learn-more">
+                    Extra details for Apple Smart Glass.
+                  </span>
+                  <button class="des__btn" id="des__btn">Learn more</button>
+                </p>
+              </div>
+              <div class="product-card__details">
+                <p class="price">$325.99</p>
+                <p class="rating">Rating: 3.8/5</p>
+                <button class="btn btn--add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Product Card Example -->
+          <div class="product-card">
+            <div class="product-card__badge">
+              <p>5 in stock</p>
+              <hr class="product-card__divider" />
+              <p>3 sold</p>
+            </div>
+            <img
+              src="../img/product1.jpg"
+              alt="Sony V-4 Headphone"
+              class="product-card__image"
+            />
+            <div class="product-card__body">
+              <div class="product-card__title">
+                <h2>Sony V-4 Headphone</h2>
+                <span class="color--green"></span>
+                <span class="color--black"></span>
+                <span class="color--red"></span>
+              </div>
+              <div class="product-card__description">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  <span class="learn-more hidden" id="learn-more">
+                    Additional product details shown here when clicking learn more.
+                  </span>
+                  <button class="des__btn"  id="des__btn">Learn more</button>
+                </p>
+              </div>
+              <div class="product-card__details">
+                <p class="price">$225.99</p>
+                <p class="rating">Rating: 4.5/5</p>
+                <button class="btn btn--add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Apple Smart Watch -->
+          <div class="product-card">
+            <div class="product-card__badge">
+              <p>2 in stock</p>
+              <hr class="product-card__divider" />
+              <p>9 sold</p>
+            </div>
+            <img
+              src="../img/product2.png"
+              alt="Apple Smart Watch"
+              class="product-card__image"
+            />
+            <div class="product-card__body">
+              <div class="product-card__title">
+                <h2>Apple Smart Watch</h2>
+                <span class="color--green"></span>
+                <span class="color--black"></span>
+                <span class="color--red"></span>
+              </div>
+              <div class="product-card__description">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  <span class="learn-more hidden" id="learn-more">
+                    Extra details for Apple Smart Watch.
+                  </span>
+                  <button class="des__btn" id="des__btn">Learn more</button>
+                </p>
+              </div>
+              <div class="product-card__details">
+                <p class="price">$425.99</p>
+                <p class="rating">Rating: 4.2/5</p>
+                <button class="btn btn--add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Apple Smart Glass -->
+          <div class="product-card">
+            <div class="product-card__badge">
+              <p>3 in stock</p>
+              <hr class="product-card__divider" />
+              <p>12 sold</p>
+            </div>
+            <img
+              src="../img/product3.jpg"
+              alt="Apple Smart Glass"
+              class="product-card__image"
+            />
+            <div class="product-card__body">
+              <div class="product-card__title">
+                <h2>Apple Smart Glass</h2>
+                <span class="color--green"></span>
+                <span class="color--black"></span>
+                <span class="color--red"></span>
+              </div>
+              <div class="product-card__description">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  <span class="learn-more hidden" id="learn-more">
+                    Extra details for Apple Smart Glass.
+                  </span>
+                  <button class="des__btn" id="des__btn">Learn more</button>
+                </p>
+              </div>
+              <div class="product-card__details">
+                <p class="price">$325.99</p>
+                <p class="rating">Rating: 3.8/5</p>
+                <button class="btn btn--add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <div class="footer__subscribe">
+          <h3>Subscribe to Newsletter</h3>
+          <input type="email" id="footer-email" placeholder="Your Email" />
+          <button type="button">Subscribe</button>
+        </div>
+        <div class="footer__copyright">
+          <p>© Copyright 2025 Nayem Express. All rights reserved</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>
